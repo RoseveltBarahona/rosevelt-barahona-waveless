@@ -1,0 +1,59 @@
+@use "../abstracts" as *;
+
+.header {
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-base * 4;
+
+    &__logo {
+        height: 1.5rem;
+        display: block;
+    }
+
+    @include tablet {
+        padding: $space-base * 6;
+
+        &__logo {
+            height: auto;
+        }
+    }
+
+    @include tablet-large {
+        padding: 0 $space-base * 8;
+    }
+
+    &__hamburger-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &--open {
+            pointer-events: none;
+        }
+
+        @include tablet-large {
+            display: none;
+        }
+    }
+}
+
+.skip-link {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: $color-brand-basic-900;
+    color: #ddd;
+    translate: 0 -100%;
+    transition: translate .2s ease-in-out;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+    translate: 0;
+}

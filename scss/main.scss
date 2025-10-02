@@ -1,0 +1,26 @@
+// Base
+@use "base";
+
+// layout
+@use "layout/header";
+@use "layout/nav";
+@use "layout/slide";
+@use "layout/footer";
+@use "layout/cards-container";
+@use "layout/filters-panel";
+
+// Components
+@use "components/buttons";
+@use "components/checkbox";
+@use "components/card";
+@use "components/price-details";
+
+// Pages
+@use "utilities"; 
+
+// Pages
+@use "pages/home"; 
+
+// Vendors
+@use "vendors/slick-overrides";    
+

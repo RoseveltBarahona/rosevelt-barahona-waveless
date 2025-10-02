@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+// OVERRIDE SLICK CSS
+.slick-slider.slick-dotted {
+    margin-bottom: 0;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #CABCCB;
+    z-index: z("default");
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slick-prev {
+    left: 0;
+    background-image: url("../img/icons/icon-chevron-left.svg");
+}
+
+.slick-next {
+    right: 0;
+    background-image: url("../img/icons/icon-chevron-right.svg");
+
+}
+
+.slick-prev .slick-prev-icon:before,
+.slick-next .slick-next-icon:before,
+.slick-dots li.slick-active button .slick-dot-icon::before,
+.slick-dots li button .slick-dot-icon:before {
+    content: "";
+}
+.slick-dots li.slick-active button .slick-dot-icon,
+.slick-dots li button .slick-dot-icon {
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 0.625rem;
+
+}
+.slick-dots li button .slick-dot-icon {
+    background-color: $indicator-slider-background-default;
+    border: solid 1px $indicator-slider-border-default;
+    opacity: 1;
+}
+.slick-dots li.slick-active button .slick-dot-icon {
+    background-color: $indicator-slider-background-selected-default;
+    border: solid 1px $indicator-slider-border-selected-default;    
+}
+
+.slick-dots {
+    bottom: 1rem;
+}
+.slick-next, .slick-prev {
+    position: absolute;
+    top: 50%;
+}
+.slick-autoplay-toggle-button{
+    z-index: z("default");
+}

@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.u-max-width {
+    //max-width: $desktop-width;
+    margin-inline: auto;
+    padding: 0 $space-base * 4;
+
+    @include tablet {
+        max-width: $tablet-small-width;
+        padding: 0;
+    }
+
+    @include tablet-large {
+        max-width: $tablet-large-width;
+    }
+
+    @include desktop {
+        max-width: $desktop-width;
+    }
+}
+
+.u-hide {
+    display: none;
+}
+
+.u-no-scroll {
+    overflow: hidden;
+
+    @include tablet {
+        overflow: auto;
+    }
+}
+
+.u-no-scroll-open-menu {
+    overflow: hidden;
+
+    @include tablet-large {
+        overflow: auto;
+    }
+}
+
+.u-filters-hide-item {
+    display: none;
+}

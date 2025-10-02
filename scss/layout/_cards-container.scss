@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+
+.cards-container {
+    @include desktop {
+        flex-grow: 1;
+    }
+}
+.title-results{
+    @extend %syne-font-family;
+    font-weight: 600;
+    color: $button-show-filter-text-default;
+    margin-block: 0 $space-base * 4;
+    font-weight: 600;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    //grid-template-columns: repeat(auto-fill, minmax(min(100%, 16.5rem), 1fr));
+    gap: $space-base *6 $space-base *6;
+    margin-bottom: $space-base * 8;
+    
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include tablet-large {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
