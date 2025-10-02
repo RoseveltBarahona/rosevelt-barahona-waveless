@@ -3,5 +3,5 @@
 
 - Por temas de CORS es necesario visualizar la app con un live server o servidor local.
 
-- >>> live demo <<< :
-[https://roseveltbarahona.github.io/prueba-tecnica-rosevelt-barahona/](https://roseveltbarahona.github.io/rosevelt-barahona-waveless/)
+- live demo :
+[https://roseveltbarahona.github.io/prueba-tecnica-rosevelt-barahona/](https://roseveltbarahona.github.io/rosevelt-barahona-waveless/){:target="_blank"}
